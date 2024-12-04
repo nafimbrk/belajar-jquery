@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.js"
+      integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      #test {
+        width: 200px;
+        height: 200px;
+        background-color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="test"></div>
+
+    <button id="myBtn">Klik Saya</button>
+
+    <script>
+      $(document).ready(function () {
+        $("#test").hide();
+
+        $("#myBtn").click(function () {
+          // dengan cara javascript
+          // document.getElementById("test").style.display = "none";
+          // document.getElementById("test").style.display = "block";
+          /* var kotak = document.getElementById("test");
+          if (kotak.style.display == "none") {
+            kotak.style.display = "block";
+          } else {
+            kotak.style.display = "none";
+          } */
+
+          // dengan cara jquery
+          // $("#test").hide();
+          // $("#test").show();
+           $("#test").toggle();
+        });
+      });
+    </script>
+  </body>
+</html>

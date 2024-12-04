@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.js"
+      integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        margin: 0;
+      }
+      .bergaris {
+        border: solid black;
+      }
+      .bgBerwarna {
+        background-color: skyblue;
+      }
+      .textPutih {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="paragraf">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nemo facilis
+      aspernatur. Molestiae voluptas praesentium dolorum cumque veniam nostrum
+      ad accusamus vero aliquam voluptates nesciunt error est doloremque quae
+      rem autem, perspiciatis porro tempore excepturi vel, debitis quo. Laborum
+      voluptates quis, porro dolor quo distinctio iusto dignissimos error
+      aperiam ex similique illo necessitatibus velit molestias, quisquam sint,
+      corrupti qui exercitationem dicta fugit magnam a dolores? Dolor saepe
+      doloremque, natus perferendis repudiandae, ea quibusdam odio distinctio
+      excepturi dicta at fugit recusandae, sed veniam facilis explicabo expedita
+      ex amet velit similique corporis quae ducimus esse exercitationem. Libero
+      fugit rerum id numquam modi.
+    </p>
+
+    <button id="bergarisOn">bergaris on</button>
+    <button id="bergarisOff">bergaris off</button>
+    <button id="bgBerwarnaOn">bg berwarna on</button>
+    <button id="bgBerwarnaOff">bg berwarna off</button>
+    <button id="textPutihOn">text putih on</button>
+    <button id="textPutihOff">text putih off</button>
+    <button id="semuaOn">semua on</button>
+    <button id="semuaOff">semua off</button>
+
+    <script>
+      $(document).ready(function () {
+        $("#bergarisOn").click(function () {
+          $("#paragraf").addClass("bergaris");
+        });
+        $("#bergarisOff").click(function () {
+          $("#paragraf").removeClass("bergaris");
+        });
+        $("#bgBerwarnaOn").click(function () {
+          $("#paragraf").addClass("bgBerwarna");
+        });
+        $("#bgBerwarnaOff").click(function () {
+          $("#paragraf").removeClass("bgBerwarna");
+        });
+        $("#textPutihOn").click(function () {
+          $("#paragraf").addClass("textPutih");
+        });
+        $("#textPutihOff").click(function () {
+          $("#paragraf").removeClass("textPutih");
+        });
+        $("#semuaOn").click(function () {
+          $("#paragraf").addClass("bergaris bgBerwarna textPutih");
+        });
+        $("#semuaOff").click(function () {
+          $("#paragraf").removeClass("bergaris bgBerwarna textPutih");
+        });
+      });
+    </script>
+  </body>
+</html>

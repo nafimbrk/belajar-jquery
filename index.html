@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.js"
+      integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <p id="test">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione
+      repellendus voluptates nesciunt reiciendis molestiae blanditiis odit
+      provident perferendis hic et modi accusamus cum, corrupti repudiandae.
+      Odit aspernatur pariatur aut fuga nostrum officia temporibus doloribus ad
+      corporis deserunt. Ab voluptatem ea a dicta doloremque sapiente, porro
+      recusandae commodi nesciunt omnis culpa magni blanditiis nulla asperiores
+      est officia neque, totam nemo? Fugiat vero magni dolorem laudantium nulla
+      adipisci quos perferendis beatae fugit? Ab explicabo facere eligendi id
+      molestiae expedita provident odit inventore, harum at rem, delectus,
+      sapiente molestias culpa ea tenetur necessitatibus libero vero quos cum
+      illum? Blanditiis rerum commodi neque ullam!
+    </p>
+
+    <script>
+      // dengan javascript
+      // document.getElementById("test").style.backgroundColor = "red";
+
+      var paragraf = document.createElement("p");
+      paragraf.innerHTML = "ini paragraf baru javascript";
+      document.getElementById("test").appendChild(paragraf);
+
+      // dengan jquery
+      // $("#test").css("background-color", "red");
+
+      $("#test").append("ini paragraf baru dari jquery");
+    </script>
+  </body>
+</html>

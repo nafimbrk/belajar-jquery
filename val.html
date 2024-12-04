@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.js"
+      integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- <input type="text" id="myInput" />
+    <button id="myBtn">klik saya</button> -->
+
+    <input type="text" name="" id="bilangan1" />
+    +
+    <input type="text" name="" id="bilangan2" />
+    =
+    <input type="text" name="" id="hasil" />
+
+    <button id="myBtn">hitung</button>
+    <script>
+      $(document).ready(function () {
+        $("#myBtn").click(function () {
+          // alert($("#myInput").val());
+          // $("#myInput").val("ini adalah isian yg baru");
+
+          var bil1 = $("#bilangan1").val();
+          var bil2 = $("#bilangan2").val();
+
+          var hasil = parseInt(bil1) + parseInt(bil2);
+
+          $("#hasil").val(hasil);
+        });
+      });
+    </script>
+  </body>
+</html>

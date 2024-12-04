@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.js"
+      integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <p id="paragraf">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi incidunt
+      saepe minus quis iste suscipit assumenda consectetur adipisci quae
+      veritatis porro quo dolorum, earum, sapiente doloribus maxime non at,
+      praesentium laborum a unde quaerat iusto. Enim debitis incidunt
+      accusantium amet pariatur obcaecati quo delectus numquam! Necessitatibus
+      optio neque minima eum ad? In, magnam. Nobis, eum! Quidem molestias
+      itaque, molestiae suscipit nobis provident ipsum laboriosam officia eum
+      tenetur neque natus ipsa praesentium nemo incidunt asperiores! Officia
+      tempore reprehenderit ea animi quis quos nobis quasi itaque vitae! Optio
+      voluptates temporibus expedita quisquam at sapiente nisi! Aut voluptas
+      quos facilis asperiores consectetur numquam!
+    </p>
+
+    <button id="bgGreen">bg green</button>
+    <button id="bgBlue">bg blue</button>
+    <button id="bgYellow">bg yellow</button>
+
+    <script>
+      $(document).ready(function () {
+        $("#bgGreen").click(function () {
+          $("#paragraf").css({
+            "background-color": "green",
+            "color": "white",
+            "font-size" : "20px"    
+        });
+        });
+
+        $("#bgBlue").click(function () {
+          $("#paragraf").css("background-color", "blue");
+        });
+
+        $("#bgYellow").click(function () {
+          $("#paragraf").css("background-color", "yellow");
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.js"
+      integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h2>menu minuman</h2>
+    <ul id="items">
+      <li>teh</li>
+      <li>kopi</li>
+    </ul>
+
+    <input type="text" name="" id="minumanBaru" />
+    <button id="myBtn">tambah minuman</button>
+
+    <script>
+      $(document).ready(function () {
+        $("#myBtn").click(function () {
+          // $("#items").append("<li>susu</li>")
+          // $("#items").prepend("<li>susu</li>")
+
+          var minumanBaru = $("#minumanBaru").val();
+          $("#items").append("<li>" + minumanBaru + "</li>");
+        });
+      });
+    </script>
+  </body>
+</html>

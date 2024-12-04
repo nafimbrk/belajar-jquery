@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.js"
+      integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      #test {
+        width: 200px;
+        height: 200px;
+        background-color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="test"></div>
+
+    <button id="myBtn">Klik Saya</button>
+
+    <script>
+      $(document).ready(function () {
+        $("#mybtn").click(function () {
+          // $("#test").fadeOut(5000, function () {
+          //  alert("berhasil fadeout");
+          // });
+
+          // $("#test").fadeIn(speed, callback);
+
+          // $("#test").fadeToggle(speed, callback);
+
+          $("#test").fadeTo(speed, opacity, callback);
+        });
+      });
+    </script>
+  </body>
+</html>

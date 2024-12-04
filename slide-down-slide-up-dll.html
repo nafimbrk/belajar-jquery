@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.js"
+      integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        margin: 0;
+      }
+      div {
+        background-color: cadetblue;
+        padding: 10px;
+      }
+      ol {
+        display: none;
+      }
+      button {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      menu
+      <ol>
+        <li>mie goreng</li>
+        <li>nasi goreng</li>
+        <li>sate</li>
+        <li>soto</li>
+      </ol>
+    </div>
+
+    <button id="slideDownBtn">slide down</button>
+    <button id="slideUpBtn">slide up</button>
+    <button id="slideToggleBtn">slide toggle</button>
+
+    <script>
+      $(document).ready(function () {
+        $("#slideDownBtn").click(function () {
+          $("ol").slideDown();
+        });
+
+        $("#slideUpBtn").click(function () {
+          $("ol").slideUp();
+        });
+
+        $("#slideToggleBtn").click(function () {
+          $("ol").slideToggle(speed, callback);
+        });
+      });
+    </script>
+  </body>
+</html>

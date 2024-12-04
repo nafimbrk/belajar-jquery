@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.js"
+      integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      button {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="paragraf">ini adalah paragraf pertama</p>
+
+    <button id="myBtn">klik saya</button>
+    <script>
+      $(document).ready(function () {
+        $("#myBtn").click(function () {
+          // alert($("#paragraf").text());
+          $("#paragraf").text("ini menggantikan isi dari paragraf sebelumnya");
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.js"
+      integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      #main {
+        display: flex;
+        height: 100vh;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      div:first-child {
+        margin-bottom: 20px;
+      }
+      button {
+        font-size: 20px;
+        padding: 10px 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div>
+        <img src="https://www.w3schools.com/js/pic_bulboff.gif" alt="" />
+      </div>
+      <div>
+        <button id="btnOn">on</button>
+        <button id="btnOff">off</button>
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $("#btnOn").click(function () {
+          $("img").attr("src", "https://www.w3schools.com/js/pic_bulbon.gif"); // property dan value
+        });
+
+        $("#btnOff").click(function () {
+          $("img").attr("src", "https://www.w3schools.com/js/pic_bulboff.gif");
+        });
+      });
+    </script>
+  </body>
+</html>
